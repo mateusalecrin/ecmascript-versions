@@ -11,25 +11,56 @@
         <main>
             <nav>
                 <h2>JS Versions</h2>
-                <link rel="stylesheet" href="">
-
+                
             </nav>
 
             <section>
                 <article>
                     <h2>Template Literals</h2>
-                    <input type="text">
-                    <button></button>
-                    <input type="text">
-                    <button></button>
-                    <input type="text">
+                    <p>1 - Crie um programa que leia duas palavras e as concatene, exibindo a palavra resultante, utilizando "template literals".</p>
+                    
+                    <input id="inputPalavra1" class="inputPadrao" type="text" placeholder="Primeira palavra" maxlength="6">
+                    <button class="buttonPadrao">+</button>
+                    <input id="inputPalavra2" class="inputPadrao" type="text" placeholder="Segunda palavra" maxlength="6">
+                    <button class="buttonPadrao" onclick="concatenacao()">=</button>
+                    <input id="resultadoPalavra" class="inputPadrao" type="text" placeholder="Resultado" disabled>
+                    
                 </article>
 
 
-                <article></article>
+                <article>
+                    <h2>Spread Operator</h2>
+                    <p>2 - Faça um programa que clone uma listagem de frutas, mínimo 3 frutas e crie outro array com frutas diferentes mais o clone, utilize Spread Operator.</p>
+
+                    <div id="conjuntoInputs">
+                        <div class="conjuntoArrays">
+                            <h4>Array de frutas 01</h4>
+                            <input class="inputPadrao arrays" type="text" placeholder="Frutas">
+                            <input class="inputPadrao arrays" type="text" placeholder="Frutas">
+                            <input class="inputPadrao arrays" type="text" placeholder="Frutas">
+                        </div>
+                        <button class="buttonPadrao">+</button>
+                        <div class="conjuntoArrays">
+                            <h4>Array de frutas 02</h4>
+                            <input class="inputPadrao arrays" type="text" placeholder="Frutas">
+                            <input class="inputPadrao arrays" type="text" placeholder="Frutas">
+                            <input class="inputPadrao arrays" type="text" placeholder="Frutas">
+                        </div>
+                        <button class="buttonPadrao" onclick="clonaArray()">=</button>
+                        <div class="conjuntoArrays">
+                            <input class="inputPadrao" type="text">
+                        </div>
+                    </div>
+
+
+                </article>
+
+
+
                 <article></article>
             </section>
         </main>
+        <footer>@Mateus</footer>
     </body>
     <script src="script.js"></script>
 </html>
