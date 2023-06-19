@@ -19,14 +19,14 @@
                     <h2>Template Literals</h2>
                     <p>1 - Crie um programa que leia duas palavras e as concatene, exibindo a palavra resultante, utilizando "template literals".</p>
                     
-                    <input id="inputPalavra1" class="inputPadrao" type="text" placeholder="Primeira palavra" maxlength="6">
-                    <button class="buttonPadrao">+</button>
-                    <input id="inputPalavra2" class="inputPadrao" type="text" placeholder="Segunda palavra" maxlength="6">
-                    <button class="buttonPadrao" onclick="concatenacao()">=</button>
-                    <input id="resultadoPalavra" class="inputPadrao" type="text" placeholder="Resultado" disabled>
-                    
+                    <div id="conjuntoInputs">
+                        <input id="inputPalavra1" class="inputPadrao" type="text" placeholder="Primeira palavra" maxlength="6">
+                        <button class="buttonPadrao" disabled>+</button>
+                        <input id="inputPalavra2" class="inputPadrao" type="text" placeholder="Segunda palavra" maxlength="6">
+                        <button class="buttonPadrao" onclick="exercicio1()">=</button>
+                        <input id="resultadoPalavra" class="inputResultado" type="text" readonly>
+                    </div>
                 </article>
-
 
                 <article>
                     <h2>Spread Operator</h2>
@@ -34,30 +34,28 @@
 
                     <div id="conjuntoInputs">
                         <div class="conjuntoArrays">
-                            <h4>Array de frutas 01</h4>
-                            <input class="inputPadrao arrays" type="text" placeholder="Frutas">
-                            <input class="inputPadrao arrays" type="text" placeholder="Frutas">
-                            <input class="inputPadrao arrays" type="text" placeholder="Frutas">
+                            <input class="inputPadrao arrays1" type="text" placeholder="Array de Frutas 01" readonly>
+                            <input class="inputPadrao arrays1" type="text" placeholder="Array de Frutas 01" readonly>
+                            <input class="inputPadrao arrays1" type="text" placeholder="Array de Frutas 01" readonly>
                         </div>
-                        <button class="buttonPadrao">+</button>
+                        <button class="buttonPadrao" disabled>+</button>
                         <div class="conjuntoArrays">
-                            <h4>Array de frutas 02</h4>
-                            <input class="inputPadrao arrays" type="text" placeholder="Frutas">
-                            <input class="inputPadrao arrays" type="text" placeholder="Frutas">
-                            <input class="inputPadrao arrays" type="text" placeholder="Frutas">
+                            <input class="inputPadrao arrays2" type="text" placeholder="Array de Frutas 02" readonly>
+                            <input class="inputPadrao arrays2" type="text" placeholder="Array de Frutas 02" readonly>
+                            <input class="inputPadrao arrays2" type="text" placeholder="Array de Frutas 02" readonly>
                         </div>
-                        <button class="buttonPadrao" onclick="clonaArray()">=</button>
+                        <button class="buttonPadrao" onclick="exercicio2()">=</button>
                         <div class="conjuntoArrays">
-                            <input class="inputPadrao" type="text">
+                            <textarea class="inputResultado" id="resultado2" type="text" cols="30" rows="10" readonly></textarea>
                         </div>
                     </div>
-
-
                 </article>
-
-
-
-                <article></article>
+                
+                <article>
+                    <h2>Class</h2>
+                    <p>3 - Crie uma classe cliente com os seguintes parametros: nome, email, cpf e chame uma função com Arrow function chamada relatório e exiba em uma string o nome da pessoa, o seu cpf e o seu email utilizando template literals.</p>
+                    
+                </article>
             </section>
         </main>
         <footer>@Mateus</footer>

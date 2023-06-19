@@ -38,6 +38,11 @@ section {
     padding: 2%;
 }
 
+article {
+    margin: 0px;
+    padding: 10px;
+}
+
 footer {
     background-color: blanchedalmond;
     border-top-left-radius: 10px;
@@ -51,6 +56,7 @@ footer {
     flex-direction: row;
     gap: 3%;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .conjuntoArrays {
@@ -60,4 +66,28 @@ footer {
     justify-content: center;
 }
 
+.inputPadrao, .inputResultado {
+    border-radius: 5px;
+    border-color: blanchedalmond;
+    height: 25px;
+    box-shadow:inset 0 0 3px 3px blanchedalmond;
+    background: #fff;
+}
 
+#resultado2 {
+    resize: none;
+    text-align: center;
+    padding: 5px;
+    line-break: auto;
+    line-height: 20px;
+    
+}
+
+.buttonPadrao {
+    width: 20px;
+    background-color: goldenrod;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 2px;
+
+}
