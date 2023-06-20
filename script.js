@@ -56,3 +56,30 @@ function exercicio2() {
 
 // 3 - Crie uma classe cliente com os seguintes parametros: nome, email, cpf e chame uma função com Arrow function chamada relatório e exiba em uma string o nome da pessoa, o seu cpf e o seu email utilizando template literals.
 
+function exercicio03() {
+    const clientes = [];
+    class Cliente {
+        constructor(nome, email, cpf) {
+            this.nome  = nome;
+            this.email = email;
+            this.cpf   = cpf;
+        }
+    }
+
+    resultado = document.getElementById("resultado3");
+    email     = document.getElementById("inputEmail").value;
+    nome      = document.getElementById("inputNome").value;
+    cpf       = document.getElementById("inputCpf").value;
+
+    const cliente = new Cliente(nome, email,cpf);
+    clientes.push(cliente);
+
+    const gerarRelatorio = () => {
+        let report = ``;
+        clientes.forEach(cliente => {
+            report += `Nome: ${cliente.nome} CPF: ${cliente.cpf} Email: ${cliente.email}\n`;
+        });
+        return report;
+    }
+    resultado.value = gerarRelatorio();
+}

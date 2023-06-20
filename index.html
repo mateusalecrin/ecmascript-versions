@@ -20,11 +20,11 @@
                     <p>1 - Crie um programa que leia duas palavras e as concatene, exibindo a palavra resultante, utilizando "template literals".</p>
                     
                     <div id="conjuntoInputs">
-                        <input id="inputPalavra1" class="inputPadrao" type="text" placeholder="Primeira palavra" maxlength="6">
-                        <button class="buttonPadrao" disabled>+</button>
-                        <input id="inputPalavra2" class="inputPadrao" type="text" placeholder="Segunda palavra" maxlength="6">
-                        <button class="buttonPadrao" onclick="exercicio1()">=</button>
-                        <input id="resultadoPalavra" class="inputResultado" type="text" readonly>
+                        <input  class="inputPadrao"    id="inputPalavra1"    type="text" placeholder="Primeira palavra" maxlength="6">
+                        <button class="buttonPadrao"   disabled>+</button>
+                        <input  class="inputPadrao"    id="inputPalavra2"    type="text" placeholder="Segunda palavra" maxlength="6">
+                        <button class="buttonPadrao"   onclick="exercicio1()">=</button>
+                        <input  class="inputResultado" id="resultadoPalavra" type="text" readonly>
                     </div>
                 </article>
 
@@ -55,6 +55,17 @@
                     <h2>Class</h2>
                     <p>3 - Crie uma classe cliente com os seguintes parametros: nome, email, cpf e chame uma função com Arrow function chamada relatório e exiba em uma string o nome da pessoa, o seu cpf e o seu email utilizando template literals.</p>
                     
+                    <div id="conjuntoInputs">
+                        <div class="conjuntoArrays">
+                            <input class="inputPadrao" id="inputNome"  type="text"    placeholder="Nome">
+                            <input class="inputPadrao" id="inputEmail" type="email"   placeholder="Email">
+                            <input class="inputPadrao" id="inputCpf"   type="numbers" placeholder="CPF">
+                        </div>
+                        <button class="buttonPadrao"   id="buttonExercicio03" onclick="exercicio03()">Relatório</button>
+                        <div class="conjuntoArrays">
+                            <textarea class="inputResultado" id="resultado3" cols=30 rows="10" readonly></textarea>
+                        </div>
+                    </div>
                 </article>
             </section>
         </main>

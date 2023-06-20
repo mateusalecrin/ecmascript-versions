@@ -74,13 +74,12 @@ footer {
     background: #fff;
 }
 
-#resultado2 {
+#resultado2, #resultado3 {
     resize: none;
     text-align: center;
     padding: 5px;
     line-break: auto;
     line-height: 20px;
-    
 }
 
 .buttonPadrao {
@@ -89,5 +88,8 @@ footer {
     border-color: black;
     border-radius: 5px;
     border-width: 2px;
+}
 
+#buttonExercicio03 {
+    width: 10%;
 }
