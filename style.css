@@ -1,23 +1,19 @@
 * {
     margin: 0;
     padding: 0;
-    font-weight: 16rem;
 }
 
 body {
     background-color: black;
     flex-direction: column;
-    display: flex;
-    height: 100vh;
     width: 100%;
 }
 
 main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: fit-content;
     background-color: transparent;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
     margin: 2%;
     gap: 2%;
 }
@@ -31,8 +27,8 @@ nav {
 section {
     display: flex;
     flex-direction: column;
-    gap: 5%;
     background-color: blanchedalmond;
+    gap: 2%;
     width: 70%;
     border-radius: 10px;
     padding: 2%;
@@ -41,6 +37,16 @@ section {
 article {
     margin: 0px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.exercicios {
+    background-color: lemonchiffon;
+    border-radius: 10px;
+    margin: 2% 5%;
+    padding: 1%;
 }
 
 footer {
@@ -51,12 +57,13 @@ footer {
     padding: 5px;
 }
 
-#conjuntoInputs {
+.conjuntoInputs {
     display: flex;
     flex-direction: row;
     gap: 3%;
     justify-content: center;
     margin-top: 20px;
+    padding: 0.5%;
 }
 
 .conjuntoArrays {
@@ -67,11 +74,37 @@ footer {
 }
 
 .inputPadrao, .inputResultado {
+    overflow: hidden;
+    min-width: 35%;
+    border-radius: 5px;
+    height: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    background: #fff;
+    border-color: blanchedalmond;
+    box-shadow:inset 0 0 3px 3px blanchedalmond;
+    box-sizing: border-box;
+}
+
+.textareaPadrao {
+    resize: none;
+    overflow: hidden;
+    min-width: 35%;
     border-radius: 5px;
     border-color: blanchedalmond;
-    height: 25px;
     box-shadow:inset 0 0 3px 3px blanchedalmond;
     background: #fff;
+    box-sizing: border-box;
+}
+
+.small {
+    min-height: 60px;
+    padding: 5px 2px;
+}
+
+.large {
+    min-height: 125px;
+    padding: 1%;
 }
 
 #resultado2, #resultado3 {
@@ -92,4 +125,50 @@ footer {
 
 #buttonExercicio03 {
     width: 10%;
+}
+
+h1 {
+    text-align: center;
+    margin: 0.5%;
+    padding: 0.5%;
+}
+
+ul {
+    padding: 1%;
+    margin: 1% 5%;
+    list-style: circle;
+    width: 50%;
+}
+
+li {
+    padding: 0.1%;
+}
+
+h2 {
+    margin: 1% 0.5% 0 0.5%;
+}
+
+p {
+    margin: 0.5% 0;
+}
+
+table {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 2% 5%;
+}
+
+tr {
+    border-radius: 10px;
+}
+
+td, th {
+    padding: 2px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+
+tr:nth-child(even) {
+    background-color: darkgray;
 }
