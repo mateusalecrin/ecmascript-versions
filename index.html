@@ -1,197 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>JS Versions</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <main>
-            <nav>
-                <h2>JS Versions</h2>
-                <a href="#Exercicio01">JS 2015(ES6)</a>
-                <a href="#">JS 2016</a>
-            </nav>
 
-            <section>
-                <h1>ECMAScript 2015(ES6)</h1>
-                <p>ECMAScript 2015 é a sexta versão da padronização do JavaScript, criada em 1997. Essa versão traz novas funcionalidades, segue abaixo todas elas.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Versions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <h2>JS Versions</h2>
+            <div>
+                <h4>JS 2015(ES6)</h4>
                 <ul>
-                    <li>The let keyword</li>
-                    <li>The const keyword</li>
-                    <li>Arrow functions</li>
-                    <li>The spread operador</li>
-                    <li>For | of</li>
-                    <li>Map objects</li>
-                    <li>Set objects</li>
-                    <li>Classes</li>
-                    <li>Promises</li>
-                    <li>Symbol</li>
-                    <li>Default parameters</li>
+                    <li><a href="#arrowFunctions">Arrow Functions</a></li>
+                    <li><a href="#arrayFind">Array.find()</a></li>
+                    <li><a href="#arrayFindIndex">Array.findIndex()</a></li>
+                    <li><a href="#arrayFrom">Array.from()</a></li>
+                    <li><a href="#arrayKeys">Array.keys()</a></li>
+                    <li><a href="#classes">Classes</a></li>
+                    <li><a href="#constKeyword">Const keyword</a></li>
+                    <li><a href="#defaultParameters">Default Parameters</a></li>
+                    <li><a href="#forOf">For/of</a></li>
+                    <li><a href="#functionRestParameter">Function Rest Parameter</a></li>
+                    <li><a href="#javascriptModules">JavaScript Modules</a></li>
+                    <li><a href="#letKeyword">Let keyword</a></li>
+                    <li><a href="#mapObjects">Map Objects</a></li>
+                    <li><a href="#newGlobalMethods">New Global Methods</a></li>
+                    <li><a href="#newMathMethods">New Math Methods</a></li>
+                    <li><a href="#newNumberMethods">New Number Methods</a></li>
+                    <li><a href="#newNumberProperties">New Number Properties</a></li>
+                    <li><a href="#objectEntries">Object entries</a></li>
+                    <li><a href="#promises">Promises</a></li>
+                    <li><a href="#setObjects">Set Objects</a></li>
+                    <li><a href="#spreadOperator">Spread Operator (...)</a></li>
+                    <li><a href="#stringEndsWith">String.endsWith()</a></li>
+                    <li><a href="#stringIncludes">String.includes()</a></li>
+                    <li><a href="#stringStartsWith">String.startsWith()</a></li>
+                    <li><a href="#symbol">Symbol</a></li>
+                    <li><a href="#templateLiterals">Template Literals</a></li>
                 </ul>
+            </div>
 
-                <article>
-                    <h2>Template Literals</h2>
-                    <p>Template literal é uma funcionalidade introduzida no ECMAScript 2015 (ES6) que permite a crição de strings de forma mais flexível e legível, especialmente quando há necessidade de incluir expressões ou variáveis dentro dessas strings. </p>
-                    <div class="exercicios">
-                        <p>1 - Crie um programa que leia duas palavras e as concatene, exibindo a palavra resultante, utilizando "template literals".</p>
-                        <div class="conjuntoInputs">
-                            <input  class="inputPadrao"    id="inputPalavra1"    type="text" placeholder="Primeira palavra" maxlength="6">
-                            <button class="buttonPadrao"   disabled>+</button>
-                            <input  class="inputPadrao"    id="inputPalavra2"    type="text" placeholder="Segunda palavra" maxlength="6">
-                            <input  class="inputResultado" id="resultadoPalavra" type="text" readonly>
-                            <button class="buttonPadrao"   onclick="exercicio1()">=</button>
-                        </div>
-                    </div>
-                </article>
+            <div>
+                <h4>JS 2016</h4>
+            </div>
+        </nav>
 
-                <article>
-                    <h2>Spread Operator</h2>
-                    <p>Spread operator é uma sintaxe do JavaScript que permite descompactar os elementos de um objeto iterável em lugares onde múltiplos elementos são esperados, facilitando a manipulação de arrays e objetos.</p>
-                    <div class="exercicios">
-                        <p>2 - Faça um programa que clone uma listagem de frutas, mínimo 3 frutas e crie outro array com frutas diferentes mais o clone, utilize Spread Operator.</p>
-                        <div class="conjuntoInputs">
-                            <div class="conjuntoArrays">
-                                <input class="inputPadrao arrays1" type="text" placeholder="Array de Frutas 01" readonly>
-                                <input class="inputPadrao arrays1" type="text" placeholder="Array de Frutas 01" readonly>
-                                <input class="inputPadrao arrays1" type="text" placeholder="Array de Frutas 01" readonly>
-                            </div>
-                            <button class="buttonPadrao" disabled>+</button>
-                            <div class="conjuntoArrays">
-                                <input class="inputPadrao arrays2" type="text" placeholder="Array de Frutas 02" readonly>
-                                <input class="inputPadrao arrays2" type="text" placeholder="Array de Frutas 02" readonly>
-                                <input class="inputPadrao arrays2" type="text" placeholder="Array de Frutas 02" readonly>
-                            </div>
-                            <button class="buttonPadrao" onclick="exercicio2()">=</button>
-                            <div class="conjuntoArrays">
-                                <textarea class="inputResultado" id="resultado2" type="text" cols="30" rows="10" readonly></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                
-                <article>
-                    <h2>Class</h2>
-                    <p>As classes em JavaScript permitem a implementação do conceito de programação orientada a objetos (POO), permitindo a criação de objetos com propriedades e comportamentos específicos. Elas oferecem uma abordagem mais estruturada e organizada para lidar com a lógica do programa.</p>
-                    <div class="exercicios">
-                        <p>3 - Crie uma classe cliente com os seguintes parametros: nome, email, cpf e chame uma função com Arrow function chamada relatório e exiba em uma string o nome da pessoa, o seu cpf e o seu email utilizando template literals.</p>    
-                        <div class="conjuntoInputs">
-                            <div class="conjuntoArrays">
-                                <input class="inputPadrao" id="inputNome"  type="text"    placeholder="Nome">
-                                <input class="inputPadrao" id="inputEmail" type="email"   placeholder="Email">
-                                <input class="inputPadrao" id="inputCpf"   type="numbers" placeholder="CPF">
-                            </div>
-                            <button class="buttonPadrao"   id="buttonExercicio03" onclick="exercicio03()">Relatório</button>
-                            <div class="conjuntoArrays">
-                                <textarea class="inputResultado" id="resultado3" cols=30 rows="10" readonly></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </article>
+        <section>
+            <h1>ECMAScript 2015(ES6)</h1>
+            <p>ECMAScript 2015 é a sexta versão da padronização do JavaScript, criada em 1997. Essa versão traz novas
+                funcionalidades, segue abaixo todas elas.</p>
 
-                <article>
-                    <h2>For... of</h2>
-                    <p>A instrução for of do JavaScript percorre os valores de um objeto iterável. Ele permite que você percorra estruturas de dados iteráveis, como Arrays, Strings, Maps, NodeLists e muito mais.</p>
-                    <div class="exercicios">
-                        <p>4 - Crie alguma coisa iterável.</p>
-                        <div class="conjuntoInputs">
-                            <input  class="inputPadrao"  type="text"   id="inputTexto" placeholder="Texto">
-                            <button class="buttonPadrao" type="button" onclick="exercicio04()">=</button>
-                            <input  class="inputPadrao"  type="text"   id="inputResultado04">  
-                        </div>
-                    </div>
-                </article>
-
-                <article>
-                    <h2>Map objects</h2>
-                    <table>
-                        <thead>
-                            <th colspan="2"><h3>Diferenças entre Objetos JavaScript e Mapas</h3></th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>Object</th>
-                                <th>Map</th>
-                            </tr>
-                            <tr>
-                                <td>Não iterável diretamente</td>
-                                <td>Diretamente iterável</td>
-                            </tr>
-                            <tr>
-                                <td>Não tem uma propriedade de tamanho</td>
-                                <td>Tenha uma propriedade de tamanho</td>
-                            </tr>
-                            <tr>
-                                <td>As chaves devem ser Strings (ou Símbolos)</td>
-                                <td>As chaves podem ser qualquer tipo de dados</td>
-                            </tr>
-                            <tr>
-                                <td>As chaves não estão bem ordenadas</td>
-                                <td>As chaves são ordenadas por inserção</td>
-                            </tr>
-                            <tr>
-                                <td>Tem chaves padrão</td>
-                                <td>Não tem chaves padrão</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <div class="exercicios">
-                        <p>1 - Dado um array de números, utilize a função map() para criar um novo array onde cada valor seja o dobro do valor correspondente do array original.</p>
-                        <div class="conjuntoInputs">
-                            <input  class="inputPadrao"  id="map01"  type="numbers" disabled>
-                            <button class="buttonPadrao" onclick="map01()"></button>
-                            <input  class="inputPadrao"  id="map001" type="numbers" disabled>
-                        </div>
-
-                        <p>2 - Dado um array de strings contendo nomes, utilize a função map() para criar um novo array onde cada nome esteja em maiúsculas.</p>
-                        <div class="conjuntoInputs">
-                            <input  class="inputPadrao"   id="map02"  type="text" disabled>
-                            <button class="buttonPadrao" onclick="map02()"></button>
-                            <input  class="inputPadrao"   id="map002" type="text" disabled>
-                        </div>
-
-                        <p>3 - Dado um array de objetos, utilize a função map() para criar um novo array contendo apenas uma propriedade específica de cada objeto.</p>
-                        <div class="conjuntoInputs">
-                            <textarea class="textareaPadrao small"  id="map03"  type="text" disabled></textarea>
-                            <button   class="buttonPadrao" onclick="map03()">=</button>
-                            <textarea class="textareaPadrao small"  id="map003" type="text" disabled></textarea>
-                        </div>
-
-                        <p>4 - Dado um array de números, utilize a função map() para criar um novo array onde cada valor seja a média dos valores anteriores, incluindo o valor atual.</p>
-                        <div class="conjuntoInputs">
-                            <input  class="inputPadrao"  id="map04"  type="text" disabled>
-                            <button class="buttonPadrao" onclick="map04()">=</button>
-                            <input  class="inputPadrao"  id="map004" type="text" disabled>
-                        </div>
-
-                        <p>5 - Dado um array de strings, utilize a função map() para criar um novo array onde cada string esteja sem espaços em branco.</p>
-                        <div class="conjuntoInputs">
-                            <textarea class="textareaPadrao large" id="map05"  type="text" disabled></textarea>
-                            <button   class="buttonPadrao"   onclick="map05()">=</button>
-                            <textarea class="textareaPadrao large" id="map005" type="text" disabled></textarea>
-                        </div>
-                    </div>
-                </article>
-
-                <article>
-                    <h2>Set objects</h2>
+            <article id="arrowFunctions">
+                <h2>Arrow Functions</h2>
+                <p></p>
+                <div class="exercicios">
                     <p></p>
+                </div>
+            </article>
 
-                    <div class="exercicios">
-                        <p>Exercicio</p>
-                        <div class="conjuntoInputs">
-                            <input type="text" class="inputPadrao">
-                            <button class="buttonPadrao"></button>
-                            <input type="text" class="inputPadrao">
+            <article id="arrayFind">
+                <h2>Array.find()</h2>
+                <p></p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="arrayFindIndex">
+                <h2>Array.findIndex()</h2>
+                <p></p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="arrayFrom">
+                <h2>Array.from()</h2>
+                <p></p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="arrayKeys">
+                <h2>Array.keys()</h2>
+                <p></p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="classes">
+                <h2>Class</h2>
+                <p>As classes em JavaScript permitem a implementação do conceito de programação orientada a objetos
+                    (POO), permitindo a criação de objetos com propriedades e comportamentos específicos. Elas oferecem
+                    uma abordagem mais estruturada e organizada para lidar com a lógica do programa.</p>
+                <div class="exercicios">
+                    <p>3 - Crie uma classe cliente com os seguintes parametros: nome, email, cpf e chame uma função com
+                        Arrow function chamada relatório e exiba em uma string o nome da pessoa, o seu cpf e o seu email
+                        utilizando template literals.</p>
+                    <div class="conjuntoInputs">
+                        <div class="conjuntoArrays">
+                            <input class="inputPadrao" id="inputNome" type="text" placeholder="Nome">
+                            <input class="inputPadrao" id="inputEmail" type="email" placeholder="Email">
+                            <input class="inputPadrao" id="inputCpf" type="numbers" placeholder="CPF">
+                        </div>
+                        <button class="buttonPadrao" id="buttonExercicio03" onclick="exercicio03()">Relatório</button>
+                        <div class="conjuntoArrays">
+                            <textarea class="inputResultado" id="resultado3" cols=30 rows="10" readonly></textarea>
                         </div>
                     </div>
-                </article>
-            </section>
-        </main>
-        <footer>@Mateus</footer>
-    </body>
-    <script src="script.js"></script>
+                </div>
+            </article>
+
+            <article id="constKeyword">
+                <h2>Const keyword</h2>
+                <p></p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="defaultParameters">
+                <h2>Default Parameters</h2>
+                <p></p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="forOf">
+                <h2>For... of</h2>
+                <p>A instrução for of do JavaScript percorre os valores de um objeto iterável. Ele permite que você
+                    percorra estruturas de dados iteráveis, como Arrays, Strings, Maps, NodeLists e muito mais.</p>
+                <div class="exercicios">
+                    <p>Crie alguma coisa iterável.</p>
+                    <div class="conjuntoInputs">
+                        <input class="inputPadrao" type="text" id="inputTexto" placeholder="Texto">
+                        <button class="buttonPadrao" type="button" onclick="exercicio04()">=</button>
+                        <input class="inputPadrao" type="text" id="inputResultado04">
+                    </div>
+                </div>
+            </article>
+
+            <article id="functionRestParameter">
+                <h2>Function Rest Parameter</h2>
+                <p></p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="javascriptModules">
+                <h2>JavaScript Modules</h2>
+                <p></p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="letKeyword">
+                <h2>Let keyword</h2>
+                <p></p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="mapObjects">
+                <h2>Map objects</h2>
+                <table>
+                    <thead>
+                        <th colspan="2">
+                            <h3>Diferenças entre Objetos JavaScript e Mapas</h3>
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Object</th>
+                            <th>Map</th>
+                        </tr>
+                        <tr>
+                            <td>Não iterável diretamente</td>
+                            <td>Diretamente iterável</td>
+                        </tr>
+                        <tr>
+                            <td>Não tem uma propriedade de tamanho</td>
+                            <td>Tenha uma propriedade de tamanho</td>
+                        </tr>
+                        <tr>
+                            <td>As chaves devem ser Strings (ou Símbolos)</td>
+                            <td>As chaves podem ser qualquer tipo de dados</td>
+                        </tr>
+                        <tr>
+                            <td>As chaves não estão bem ordenadas</td>
+                            <td>As chaves são ordenadas por inserção</td>
+                        </tr>
+                        <tr>
+                            <td>Tem chaves padrão</td>
+                            <td>Não tem chaves padrão</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="exercicios">
+                    <p>1 - Dado um array de números, utilize a função map() para criar um novo array onde cada valor
+                        seja o dobro do valor correspondente do array original.</p>
+                    <div class="conjuntoInputs">
+                        <input class="inputPadrao" id="map01" type="numbers" disabled>
+                        <button class="buttonPadrao" onclick="map01()"></button>
+                        <input class="inputPadrao" id="map001" type="numbers" disabled>
+                    </div>
+                </div>
+
+                <div class="exercicios">
+                    <p>2 - Dado um array de strings contendo nomes, utilize a função map() para criar um novo array onde
+                        cada nome esteja em maiúsculas.</p>
+                    <div class="conjuntoInputs">
+                        <input class="inputPadrao" id="map02" type="text" disabled>
+                        <button class="buttonPadrao" onclick="map02()"></button>
+                        <input class="inputPadrao" id="map002" type="text" disabled>
+                    </div>
+                </div>
+
+                <div class="exercicios">
+                    <p>3 - Dado um array de objetos, utilize a função map() para criar um novo array contendo apenas uma
+                        propriedade específica de cada objeto.</p>
+                    <div class="conjuntoInputs">
+                        <textarea class="textareaPadrao small" id="map03" type="text" disabled></textarea>
+                        <button class="buttonPadrao" onclick="map03()">=</button>
+                        <textarea class="textareaPadrao small" id="map003" type="text" disabled></textarea>
+                    </div>
+                </div>
+
+                <div class="exercicios">
+                    <p>4 - Dado um array de números, utilize a função map() para criar um novo array onde cada valor
+                        seja a média dos valores anteriores, incluindo o valor atual.</p>
+                    <div class="conjuntoInputs">
+                        <input class="inputPadrao" id="map04" type="text" disabled>
+                        <button class="buttonPadrao" onclick="map04()">=</button>
+                        <input class="inputPadrao" id="map004" type="text" disabled>
+                    </div>
+                </div>
+
+                <div class="exercicios">
+                    <p>5 - Dado um array de strings, utilize a função map() para criar um novo array onde cada string
+                        esteja sem espaços em branco.</p>
+                    <div class="conjuntoInputs">
+                        <textarea class="textareaPadrao large" id="map05" type="text" disabled></textarea>
+                        <button class="buttonPadrao" onclick="map05()">=</button>
+                        <textarea class="textareaPadrao large" id="map005" type="text" disabled></textarea>
+                    </div>
+                </div>
+            </article>
+
+            <article id="newGlobalMethods">
+                <h2>New Global Methods</h2>
+                <p></p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="newMathMethods">
+                <h2>New Math Methods</h2>
+                <p></p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="newNumberMethods">
+                <h2>New Number Methods</h2>
+                <p></p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="newNumberProperties">
+                <h2>New Number Properties</h2>
+                <p></p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="objectEntries">
+                <h2>Object entries</h2>
+                <p></p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="promises">
+                <h2>Promises</h2>
+                <p>O objeto <span>Promise</span> representa a eventual conclusão (ou falha) de uma operação assíncrona e seu valor resultante.</p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="setObjects">
+                <h2>Set Objects</h2>
+                <p></p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="spreadOperator">
+                <h2>Spread Operator (...)</h2>
+                <p>Spread operator é uma sintaxe do JavaScript que permite descompactar os elementos de um objeto
+                    iterável em lugares onde múltiplos elementos são esperados, facilitando a manipulação de arrays e
+                    objetos.</p>
+                <div class="exercicios">
+                    <p>2 - Faça um programa que clone uma listagem de frutas, mínimo 3 frutas e crie outro array com
+                        frutas diferentes mais o clone, utilize Spread Operator.</p>
+                    <div class="conjuntoInputs">
+                        <div class="conjuntoArrays">
+                            <input class="inputPadrao arrays1" type="text" placeholder="Array de Frutas 01" readonly>
+                            <input class="inputPadrao arrays1" type="text" placeholder="Array de Frutas 01" readonly>
+                            <input class="inputPadrao arrays1" type="text" placeholder="Array de Frutas 01" readonly>
+                        </div>
+                        <button class="buttonPadrao" disabled>+</button>
+                        <div class="conjuntoArrays">
+                            <input class="inputPadrao arrays2" type="text" placeholder="Array de Frutas 02" readonly>
+                            <input class="inputPadrao arrays2" type="text" placeholder="Array de Frutas 02" readonly>
+                            <input class="inputPadrao arrays2" type="text" placeholder="Array de Frutas 02" readonly>
+                        </div>
+                        <button class="buttonPadrao" onclick="exercicio2()">=</button>
+                        <div class="conjuntoArrays">
+                            <textarea class="inputResultado" id="resultado2" type="text" cols="30" rows="10"
+                                readonly></textarea>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article id="stringEndsWith">
+                <h2>String.endsWith()</h2>
+                <p></p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="stringIncludes">
+                <h2>String.includes()</h2>
+                <p></p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="stringStartsWith">
+                <h2>String.startsWith()</h2>
+                <p></p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="symbol">
+                <h2>Symbol</h2>
+                <p></p>
+                <div class="exercicios">
+                    <p></p>
+                </div>
+            </article>
+
+            <article id="templateLiterals">
+                <h2>Template Literals</h2>
+                <p>Template literal é uma funcionalidade introduzida no ECMAScript 2015 (ES6) que permite a crição de
+                    strings de forma mais flexível e legível, especialmente quando há necessidade de incluir expressões
+                    ou variáveis dentro dessas strings. </p>
+                <div class="exercicios">
+                    <p>1 - Crie um programa que leia duas palavras e as concatene, exibindo a palavra resultante,
+                        utilizando "template literals".</p>
+                    <div class="conjuntoInputs">
+                        <input class="inputPadrao" id="inputPalavra1" type="text" placeholder="Primeira palavra"
+                            maxlength="6">
+                        <button class="buttonPadrao" disabled>+</button>
+                        <input class="inputPadrao" id="inputPalavra2" type="text" placeholder="Segunda palavra"
+                            maxlength="6">
+                        <input class="inputResultado" id="resultadoPalavra" type="text" readonly>
+                        <button class="buttonPadrao" onclick="exercicio1()">=</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>@Mateus</footer>
+</body>
+<script src="script.js"></script>
+
 </html>

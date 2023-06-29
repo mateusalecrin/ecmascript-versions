@@ -1,3 +1,17 @@
+:root {
+    --fsTitulosH1: 22px;
+    --fsTitulosH2: 18px;
+    --fsTitulosH3: 16px;
+    --fsTextosNormais: 14px;
+    --fsEnunciados: 12px;
+
+    --titulosH1: var(--fsTitulosH1);
+    --titulosH2: var(--fsTitulosH2);
+    --titulosH3: var(--fsTitulosH3);
+    --textosNormais: var(--fsTextosNormais);
+    --textosEnunciados: var(--fsEnunciados);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +36,7 @@ nav {
     background-color: blanchedalmond;
     border-radius: 10px;
     padding: 2%;
+    width: 15%;
 }
 
 section {
@@ -78,8 +93,8 @@ footer {
     min-width: 35%;
     border-radius: 5px;
     height: 30px;
-    box-sizing: border-box;
     text-align: center;
+    border: none;
     background: #fff;
     border-color: blanchedalmond;
     box-shadow:inset 0 0 3px 3px blanchedalmond;
@@ -136,7 +151,7 @@ h1 {
 ul {
     padding: 1%;
     margin: 1% 5%;
-    list-style: circle;
+    list-style: none;
     width: 50%;
 }
 
@@ -171,4 +186,14 @@ td, th {
 
 tr:nth-child(even) {
     background-color: darkgray;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+nav div {
+
 }
